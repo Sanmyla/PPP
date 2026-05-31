@@ -6,8 +6,18 @@ import modelos.Toyota;
 public class Main {
     public static void main(String[] args) {
 
+        /*
+        * Padroes utilizados:
+        * Factory Method(Metodo de fabrica) -> para uma redução de acoplameto estrutural,
+        *  respeitando o Principio de abeto/fehado. Com esse padrao a classe Main nao precisa
+        *  instaciar as outras classes usando New
+        * Singleton -> Singleton dentro das classes Toyota e Honda para garantir que essas
+        *  fábricas sejam instâncias únicas na memória, espelhando corretamente o domínio real
+        *  do problema
+        * */
+
         System.out.println("--- Testando o Singleton das Fábricas ---");
-        // usamos o metodo estatico
+        // metodo estatico
         IVehicleMaker fabricaToyota = Toyota.getInstance();
         IVehicleMaker fabricaHonda = Honda.getInstance();
 
