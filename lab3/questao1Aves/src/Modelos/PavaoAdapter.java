@@ -7,13 +7,6 @@ public class PavaoAdapter implements Ave {
         this.pavaoAzul = pavaoAzul;
     }
 
-    public PavaoAzul getPavaoAzul() {
-        return pavaoAzul;
-    }
-    public void setPavaoAzul(PavaoAzul pavaoAzul) {
-        this.pavaoAzul = pavaoAzul;
-    }
-
     @Override
     public void emitirSom(){
         pavaoAzul.cantar();
