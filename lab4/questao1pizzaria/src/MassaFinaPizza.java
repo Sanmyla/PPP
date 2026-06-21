@@ -1,4 +1,4 @@
-public class MassaFinaPizza {
+public class MassaFinaPizza implements Pizza {
 
     public String getDescricao() {
         return "massa fina";

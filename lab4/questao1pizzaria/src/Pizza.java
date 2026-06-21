@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
-
 public interface Pizza {
+
+    public String getDescricao();
+
+    public double getCusto();
+
 }

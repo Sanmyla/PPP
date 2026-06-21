@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class MassaEspessaPizza implements Pizza {
 
-public class MassaEspessaPizza {
+    public String getDescricao() {
+        return "massa espessa";
+    }
+
+    public double getCusto() {
+        return 15.0;
+    }
+
 }

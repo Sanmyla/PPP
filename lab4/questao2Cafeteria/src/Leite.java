@@ -1,4 +1,15 @@
-package PACKAGE_NAME;
+class Leite extends CondimentoDecorator {
+    public Leite(Bebida bebida) {
+        super(bebida);
+    }
 
-public class Leite {
+    @Override
+    public double calculaCusto() {
+        return bebida.calculaCusto() + 1.00;
+    }
+
+    @Override
+    public String getDescricao() {
+        return bebida.getDescricao() + " com Leite";
+    }
 }

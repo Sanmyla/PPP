@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+class Espresso implements Bebida {
+    @Override
+    public double calculaCusto() {
+        return 4.50;
+    }
 
-public class Espresso {
+    @Override
+    public String getDescricao() {
+        return "Espresso";
+    }
 }

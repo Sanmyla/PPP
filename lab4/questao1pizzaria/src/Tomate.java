@@ -1,4 +1,17 @@
-package PACKAGE_NAME;
+public class Tomate extends PizzaDecorator {
 
-public class Tomate {
+    public Tomate(Pizza pizza){
+        super(pizza);
+    }
+
+    public String getDescricao(){
+        String descricaoSemTomate = super.getDescricao();
+        return descricaoSemTomate + " tomate";
+    }
+
+    public double getCusto(){
+        double custoSemTomate = super.getCusto();
+        return custoSemTomate + 10.00;
+    }
+
 }

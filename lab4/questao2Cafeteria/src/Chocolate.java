@@ -1,4 +1,15 @@
-package PACKAGE_NAME;
+class Chocolate extends CondimentoDecorator {
+    public Chocolate(Bebida bebida) {
+        super(bebida);
+    }
 
-public class Chocolate {
+    @Override
+    public double calculaCusto() {
+        return bebida.calculaCusto() + 1.50;
+    }
+
+    @Override
+    public String getDescricao() {
+        return bebida.getDescricao() + " com Chocolate";
+    }
 }

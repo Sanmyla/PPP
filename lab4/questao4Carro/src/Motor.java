@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+class Motor {
+    public void ligar() {
+        System.out.println("Motor ligado.");
+    }
 
-public class Motor {
+    public void desligar() {
+        System.out.println("Motor desligado.");
+    }
 }

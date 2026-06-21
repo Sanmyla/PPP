@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+class Radio {
+    public void ligar() {
+        System.out.println("Rádio ligado.");
+    }
 
-public class Radio {
+    public void desligar() {
+        System.out.println("Rádio desligado.");
+    }
+
+    public void sintonizar(String estacao) {
+        System.out.println("Rádio sintonizado em " + estacao + ".");
+    }
 }

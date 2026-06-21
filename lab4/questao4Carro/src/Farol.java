@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+class Farol {
+    public void acender() {
+        System.out.println("Farol aceso.");
+    }
 
-public class Farol {
+    public void apagar() {
+        System.out.println("Farol apagado.");
+    }
 }
