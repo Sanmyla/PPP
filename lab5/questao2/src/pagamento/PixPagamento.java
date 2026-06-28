@@ -1,0 +1,10 @@
+package pagamento;
+
+public class PixPagamento implements PagamentoStrategy {
+
+
+    public void pagar(double total) {
+        System.out.println("Pagando com pix, valor -> R$" + total);
+    }
+
+}
